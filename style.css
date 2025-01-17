@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main-section {
+  min-height: 100vh;
+  background-color: rgb(79, 108, 90);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  background-color: rgb(252, 253, 253);
+
+  display: flex;
+  flex-direction: column;
+
+  max-width: 70%;
+  gap: 1.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.content-wrapper > div {
+  border-radius: 1rem;
+  box-shadow: 0px 0px 7px 0px rgb(193, 193, 193);
+  padding: 1rem;
+}
+
+.subscription-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscription-header .plan-detail .title {
+  margin-bottom: 0.5rem;
+}
+
+.subscription-header .plan-detail small {
+  display: flex;
+  align-items: center;
+  color: gray;
+}
+
+.subscription-header .plan-detail span {
+  color: #000;
+  font-weight: 600;
+}
+
+.subscription-header .plan-detail .highlight {
+  font-size: 0.7rem;
+  background-color: rgb(201, 252, 198);
+  display: inline-block;
+  padding: 0.2rem;
+  font-weight: 600;
+}
+
+.subscription-header .plan-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 0.5rem;
+}
+
+.subscription-header .plan-number .exact-number {
+  background-color: rgb(246, 246, 246);
+  padding: 0.5rem 1rem;
+  border-bottom: 4px solid black;
+}
+
+.plan-div {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.plan-div .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 30%;
+
+  box-shadow: 0px 0px 7px 0px rgb(193, 193, 193);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.plan-div .box .plan-title {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.plan-div .box small {
+  display: block;
+  font-size: 12px;
+  color: gray;
+}
+
+.plan-div .box .plan-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  background-color: transparent;
+}
+
+.details {
+  display: flex;
+}
+
+.details .left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 30%;
+
+  border-right: 2px solid gray;
+  padding-right: 1rem;
+}
+
+.details .left .desc {
+  text-align: justify;
+}
+
+.details .left .talk-btn {
+  padding: 0.2rem 1rem;
+  border-radius: 2rem;
+  background-color: rgb(33, 106, 27);
+  color: #fff;
+}
+
+.details .right {
+  padding-left: 2rem;
+}
+
+.details .right .desc {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .plan-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plan-div .box {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .details .left {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-right: unset;
+    border-bottom: 2px solid gray;
+    padding-bottom: 1.5rem;
+  }
+
+  .details .right {
+    margin-right: unset;
+    padding-right: unset;
+  }
+}
+
+@media (max-width: 500px) {
+  .content-wrapper {
+    min-width: 350px;
+  }
+  .plan-div {
+    display: flex;
+    flex-direction: column;
+  }
+}
